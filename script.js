@@ -30,30 +30,8 @@ p1.sayHello();// Hello Jan!
 p2.sayHello(); // Hello Zbigniew!
 */
 
-/*function Gutton(text) {
-    this.text = text;
-    this.text = text || 'say Hello to my little friend';
-    button.prototype.hello = {
-        create: function () {
-            var self = this;
-            this.$element = $('<button>');
-            this.$element.text(this.text);
-            this.$element.appendTo($('body'),
-            this.$element.click(function() {
-                alert(self.text);
-                // this.$element.appendTo($('body'));
 
 
-            )},
-    }
-}
-}
-
-
-var btn1 = new button('Ayyye!');
-
-btn1.Gutton();
-*/
 $(document).ready(function () {
     function randomString() {
         var chars = '0123456789abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXTZ';
@@ -111,7 +89,6 @@ $(document).ready(function () {
         this.$element = createCard(); //
 
         function createCard() {
-            // CREATING THE BLOCKS
             var $card = $('<li>').addClass('card');
             var $cardDescription = $('<p>').addClass('card-description').text(self.description);
             var $cardDelete = $('<button>').addClass('btn-delete').text('x');
