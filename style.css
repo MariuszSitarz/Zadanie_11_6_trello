@@ -1,0 +1,24 @@
+*:focus {
+    outline: none;
+}
+
+.card-placeholder {
+    background: red;
+}
+.board {
+    border: 2px solid #1275ff;
+    background-color: rgba(13, 75, 180, 0.1);
+}
+
+h2 {
+    font-size: 1rem;
+}
+.create-column {
+    border-radius: 5px;
+}
+.add-card {
+    border-radius: 5px;
+}
+.btn-delete {
+    border-radius: 5px;
+}
