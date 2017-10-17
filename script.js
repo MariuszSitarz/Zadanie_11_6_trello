@@ -31,7 +31,6 @@ p2.sayHello(); // Hello Zbigniew!
 */
 
 
-
 $(document).ready(function () {
     function randomString() {
         var chars = '0123456789abcdefghiklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXTZ';
@@ -94,37 +93,40 @@ $(document).ready(function () {
             var $cardDelete = $('<button>').addClass('btn-delete').text('x');
 
 
-            $cardDelete.click(function(){
+            $cardDelete.click(function () {
                 self.removeCard();
             });
 
             $card.append($cardDelete);
-                $card.append($cardDescription);
+            $card.append($cardDescription);
 
             return $card;
         }
     }
+
     Card.prototype = {
-        removeCard: function() {
+        removeCard: function () {
             this.$element.remove();
         }
     };
     var board = {
         name: 'Kanban Board',
-        addColumn: function(column) {
+        addColumn: function (column) {
             this.$element.append(column.$element);
             initSortable();
         },
         $element: $('#board .column-container')
     };
+
     function initSortable() {
         $('.column-card-list').sortable({
             connectWith: '.column-card-list',
             placeholder: 'card-placeholder'
         }).disableSelection();
     }
+
     $('.create-column')
-        .click(function(){
+        .click(function () {
             var name = prompt('Enter a column name');
             var column = new Column(name);
             board.addColumn(column);
@@ -143,6 +145,6 @@ $(document).ready(function () {
 
     todoColumn.addCard(card1);
     doingColumn.addCard(card2);
-});
 
+});
 

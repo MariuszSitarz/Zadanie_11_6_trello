@@ -1,24 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
+
+
 *:focus {
     outline: none;
 }
 
-.card-placeholder {
-    background: red;
+* {
+    font-family: 'Special Elite', cursive;
 }
+
+.card-placeholder {
+    background: rgb(0, 0, 0);
+}
+
 .board {
-    border: 2px solid #1275ff;
+    padding: 5px;
+    text-align: center;
     background-color: rgba(13, 75, 180, 0.1);
+    background-image: url("https://img00.deviantart.net/7505/i/2012/085/5/3/stained_paper__02_by_carlbert-d4tzevl.jpg");
+    /*background-repeat: no-repeat;*/
+    background-size: cover;
+}
+.column {
+    display: inline-block;
+    padding: 30px;
+    margin: 10px;
+    border: 1px solid brown;
+    box-shadow: 3px 3px 4px rgba(33,33,33,.7);
+}
+
+.card {
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid rgba(101, 50, 19, 0.71);
+    background-color: rgba(255, 255, 0, 0.18);
+    box-shadow: 5px 5px 7px rgba(33,33,33,.7);
+
+
+
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
 h2 {
     font-size: 1rem;
 }
+
+.column-title {
+    font-size: 1.5rem;
+    padding: 15px;
+}
+
 .create-column {
     border-radius: 5px;
 }
+
 .add-card {
     border-radius: 5px;
+    padding: 5px;
 }
+
 .btn-delete {
     border-radius: 5px;
+
+}
+
+button {
+    background-color: rgba(214, 214, 214, 0.8);
+}
+
+button:hover {
+    color: #949494;
 }
